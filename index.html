@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mese_corrente"></h1>
+      <div class="container_buttons">
+        <button class="prec" type="button" name="button">Prec</button>
+        <button class="succ" type="button" name="button">Succ</button>
+      </div>
+      <ul class="calendario">
+      </ul>
+    </div>
+
+    <script src="main.js"></script>
+    <script id="template_giorno" type="text/x-handlebars-template">
+      <li data-giorno = "{{giorno}}" class= "{{class_festivita}}">{{ giorno_template }}</li>
+    </script>
+
+  </body>
+</html>
